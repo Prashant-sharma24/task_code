@@ -160,4 +160,11 @@ class Users extends CI_Controller {
         $data['results'] = json_decode($response, true)['hits'];
         $this->load->view('search', $data);
     }
+
+
+
+public function logout() {
+    $this->session->unset_userdata('user');
+    redirect('users/login'); // Redirect to the login page after logout
+}
 }

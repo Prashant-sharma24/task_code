@@ -8,6 +8,7 @@ $route['translate_uri_dashes'] = FALSE;
 // User routes
 $route['register'] = 'users/register';
 $route['login'] = 'users/login';
+$route['logout'] = 'users/logout';
 $route['dashboard'] = 'users/dashboard';
 $route['profile'] = 'users/profile';
 $route['update_profile'] = 'users/update_profile';
